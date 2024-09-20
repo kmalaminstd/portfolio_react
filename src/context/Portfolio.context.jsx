@@ -10,31 +10,36 @@ export const PortfolioProvider = ({children})=>{
             projectName: 'Portfolio',
             portfolioImage: '',
             details: '<h1>This is the print time</h1>',
-            category: 'psdconv'
+            category: 'psdconv',
+            projectLink: 'https://kmalaminstd.github.io/portfolio/'
         },
         {
             projectName: 'Portfolio',
             portfolioImage: '',
             details: '<h1>This is the print time</h1>',
-            category: 'webdesign'
+            category: 'webdesign',
+            projectLink: 'https://kmalaminstd.github.io/portfolio/'
         },
         {
             projectName: 'Portfolio',
             portfolioImage: '',
             details: '<h1>This is the print time</h1>',
-            category: 'react'
+            category: 'react',
+            projectLink: 'https://kmalaminstd.github.io/portfolio/'
         },
         {
             projectName: 'Portfolio',
             portfolioImage: '',
             details: '<h1>This is the print time</h1>',
-            category: 'psdconv'
+            category: 'psdconv',
+            projectLink: 'https://kmalaminstd.github.io/portfolio/'
         },
         {
             projectName: 'Portfolio',
             portfolioImage: '',
             details: '<h1>This is the print time</h1>',
-            category: 'js'
+            category: 'js',
+            projectLink: 'https://kmalaminstd.github.io/portfolio/'
         }
     ]
 

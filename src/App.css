@@ -477,12 +477,12 @@ img{
     -o-transition: all linear 0.4s;
 }
 
-#work .worK_btn{
+#work .work_btn{
     text-align: center;
     margin-top: 30px;
 }
 
-#work .worK_btn a{
+#work .work_btn a{
     border: 1px solid #fff;
     padding: 10px 20px;
     color: #fff;
@@ -491,7 +491,7 @@ img{
     transition: all linear 0.4s;
 }
 
-#work .worK_btn a:hover{
+#work .work_btn a:hover{
     background-color: #fff;
     color: #000;
     box-shadow: 0 0 8px #fff;
@@ -710,3 +710,53 @@ footer a{
 
 
 /* portfolio css end here */
+
+
+/* .portfolio details css start */
+
+.portfolio_details {
+    margin-top: 100px;
+    position: relative;
+    background-color: #1f1f1f;
+    padding-bottom: 50px;
+}
+
+.port_name{
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+}
+
+.port_name h3{
+    font-size: 30px;
+}
+
+.port_name::after{
+    content: '';
+    background-color: #678e1d;
+    height: 2px;
+    width: 20%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.port_name a{
+    color: #fff;
+}
+
+.port_name a:hover{
+    color: #557118;
+}
+
+.port_detail{
+    padding: 30px;
+}
+
+.port_detail{
+    margin-top: 30px;
+    background-color: #FEFEFF;
+}
+
+/* .portfolio details css end */

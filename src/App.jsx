@@ -6,6 +6,7 @@ import Home from "./pages/Home"
 import Footer from "./component/shared/Footer"
 import Contact from "./pages/Contact"
 import Portfolio from './pages/Portfolio'
+import PortfolioDetails from './pages/PortfolioDetails'
 
 
 
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
             {
                 path: 'portfolio',
                 element: <Portfolio />
+            },
+            {
+                path: 'portfolio-details',
+                element: <PortfolioDetails />
             }
         ]
     }

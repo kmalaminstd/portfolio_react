@@ -24,7 +24,7 @@ function Work() {
                                 <div className="single_work" key={i}>
                                     <img src="./image/work_one.png" alt="" />
                                     <div className="single_work_overlay">
-                                        <a href="https://kmalaminstd.github.io/portfolio/" target="_blank">{item.projectName}</a>
+                                        <Link to="/portfolio-details" >{item.projectName}</Link>
                                     </div>
                                 </div>
                             )
@@ -53,12 +53,14 @@ function Work() {
 
                 </div>
 
-                <div className="worK_btn">
+                <div className="work_btn">
                     <Link to="/portfolio">See All Work</Link>
                 </div>
 
+                
+
             </div>
-            <div className="clearifix"></div>
+            {/* <div className="clearifix"></div> */}
         </div>
     </>
   )

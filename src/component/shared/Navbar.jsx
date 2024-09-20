@@ -26,13 +26,16 @@ function Navbar() {
                 <ul className={`${toggle ? "toggle_links" : ''} nav-links`}>
                     <li><Link to="/">Home</Link></li>
                     {
-                        location.pathname.split('/')[1] !== 'contact' &&
-                        <>
-                            <li><a href="#services">Services</a></li>
-                            <li><a href="#skills">Skills</a></li>
-                            <li><a href="#work">My Work</a></li>
-                        </> 
+                        location.pathname.split('/')[1] !== 'contact' && location.pathname.split('/')[1] !== 'portfolio-details' && (
+
+                            <>
+                                <li><a href="#services">Services</a></li>
+                                <li><a href="#skills">Skills</a></li>
+                                <li><a href="#work">My Work</a></li>
+                            </> 
+                        )
                     }
+    
                     <li><Link to="/contact">Contact Me</Link></li>
                 </ul>
                 <div className="hamburger" onClick={toggleNav}>
