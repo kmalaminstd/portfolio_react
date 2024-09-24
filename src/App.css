@@ -9,6 +9,15 @@ html {
     scroll-behavior: smooth;
 }
 
+.webLoader{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.438);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 button{
     cursor: pointer;
 }
@@ -35,6 +44,18 @@ ul, ol{
 
 a{
     text-decoration: none;
+}
+
+.notFound{
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notFound h2{
+    color: #fff;
+    font-size: 5rem;
 }
 
 /* Container */
@@ -263,7 +284,7 @@ img{
     margin-top: 50px;
 }
 
-.hire_btn button{
+.hire_btn a{
     background-color: #678e1d;
     border: 0.5px solid #fff;
     color: #fff;

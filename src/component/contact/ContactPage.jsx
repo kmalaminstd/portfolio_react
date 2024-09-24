@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 
 
 function ContactPage() {
@@ -20,7 +21,7 @@ function ContactPage() {
                                 <img src="./image/facebook.png" alt="" /> 
                             </div>
                             <div className="site_name">
-                                <a href="https://www.facebook.com/kmalaminstd">Facebook</a>
+                                <Link to="https://www.facebook.com/kmalaminstd">Facebook</Link>
                             </div>
                         </div>
 
@@ -29,7 +30,7 @@ function ContactPage() {
                                 <img src="./image/instagram.png" alt="" />
                             </div>
                             <div className="site_name">
-                                <a href="https://www.instagram.com/kmalaminwd/">Instagram</a>
+                                <Link to="https://www.instagram.com/kmalaminwd/">Instagram</Link>
                             </div>
                         </div>
 
@@ -38,7 +39,7 @@ function ContactPage() {
                                 <img src="./image/twitter.png" alt="" />
                             </div>
                             <div className="site_name">
-                                <a href="https://x.com/KMALAMI61039121">X (twitter)</a>
+                                <Link to="https://x.com/KMALAMI61039121">X (twitter)</Link>
                             </div>
                         </div>
 
@@ -47,7 +48,7 @@ function ContactPage() {
                                 <img src="./image/github (1).png" alt="" />
                             </div>
                             <div className="site_name">
-                                <a href="github.com/kmalaminstd">Github</a>
+                                <Link to="github.com/kmalaminstd">Github</Link>
                             </div>
                         </div>
 
@@ -66,7 +67,7 @@ function ContactPage() {
                                 <img src="./image/gmail.png" alt="" />
                             </div>
                             <div className="site_name">
-                                <a href="mailto:alaminkhanstd@gmail.com">Gmail</a>
+                                <Link to="mailto:alaminkhanstd@gmail.com">Gmail</Link>
                             </div>
                         </div>
                     </div>

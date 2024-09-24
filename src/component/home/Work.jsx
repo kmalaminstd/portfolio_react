@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom"
 import { PortfolioContext } from "../../context/Portfolio.context"
 import { useContext } from "react"
+import { DotLoader } from "react-spinners"
 
 
 function Work() {
 
-    const { portfolioItem } = useContext(PortfolioContext)
+    const { items } = useContext(PortfolioContext)
     // console.log(portfolioItem);
     
   return (
@@ -18,17 +19,28 @@ function Work() {
 
                 <div className="all_works">
                     {
-                        portfolioItem.slice(0, 3).map((item, i) => {
+                        items ? items.slice(0, 3).map((item, i) => {
                             
                             return(
                                 <div className="single_work" key={i}>
-                                    <img src="./image/work_one.png" alt="" />
+                                    <img src={item.portfolio_image} alt="" />
                                     <div className="single_work_overlay">
-                                        <Link to="/portfolio-details" >{item.projectName}</Link>
+                                        <Link to={`/portfolio-details/${item.id}`} >{item.portfolio_name}</Link>
                                     </div>
                                 </div>
                             )
-                        })
+                        }) : (
+                            <div className="webLoader">
+                                <DotLoader
+                                height="80"
+                                width="80"
+                                radius={1}
+                                color="#4fa94d"
+                                aria-label="loading-indicator"
+                                visible="true" 
+                                />
+                            </div>
+                        )
                     }
                     {/* <div className="single_work">
                         <img src="./image/work_one.png" alt="" />

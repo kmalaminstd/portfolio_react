@@ -22,11 +22,11 @@ function Navbar() {
     
         <nav className="navbar">
             <div className="container">
-                <Link to="#" className="logo">K.M. AL-AMIN</Link>
+                <Link to="/" className="logo">K.M. AL-AMIN</Link>
                 <ul className={`${toggle ? "toggle_links" : ''} nav-links`}>
                     <li><Link to="/">Home</Link></li>
                     {
-                        location.pathname.split('/')[1] !== 'contact' && location.pathname.split('/')[1] !== 'portfolio-details' && (
+                        location.pathname.split('/')[1] == '' && location.pathname.split('/')[1] !== 'portfolio-details' && (
 
                             <>
                                 <li><a href="#services">Services</a></li>

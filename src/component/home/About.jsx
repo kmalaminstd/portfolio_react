@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 
 
 function About() {
@@ -17,7 +18,7 @@ function About() {
                     {/* <div className="socials"></div>  */}
 
                     <div className="hire_btn">
-                        <button>Hire Me</button>
+                        <Link to="/contact">Hire Me</Link>
                     </div>
                 </div>
             </div>

@@ -1,9 +1,10 @@
 import { useContext, useEffect, useRef } from 'react';
 import { PortfolioContext } from '../context/Portfolio.context';
 import Isotope from 'isotope-layout';
+import { Link } from 'react-router-dom';
 
 function Portfolio() {
-  const { portfolioItem } = useContext(PortfolioContext);
+  const { items } = useContext(PortfolioContext);
 
   const isotopGridRef = useRef(null);
   const iso = useRef(null);
@@ -67,21 +68,18 @@ function Portfolio() {
             </div>
 
             <div className="portfolio_container" ref={isotopGridRef}>
-              {portfolioItem.map((item, i) => {
+              {items && items.map((item, i) => {
                 return (
                   <div
                     className={`grid single_work ${item.category}`}
                     key={i}
                   >
-                    <img src="./image/work_one.png" alt="" />
+                    <img src={item.portfolio_image} alt="" />
                     <div className="single_work_overlay">
-                      <a
-                        href="https://kmalaminstd.github.io/portfolio/"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                      <Link to={`/portfolio-details/${item.id}`}
                       >
-                        {item.projectName}
-                      </a>
+                        {item.portfolio_name}
+                      </Link>
                     </div>
                   </div>
                 );

@@ -73,6 +73,12 @@
     }
 }
 
+@media screen and (max-width: 600px){
+    .portfolio .portfolio_container .single_work {
+        width: 100% !important;
+    }
+}
+
 @media only screen and (max-width: 425px){
 
     .container{

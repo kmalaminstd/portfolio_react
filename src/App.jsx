@@ -7,6 +7,7 @@ import Footer from "./component/shared/Footer"
 import Contact from "./pages/Contact"
 import Portfolio from './pages/Portfolio'
 import PortfolioDetails from './pages/PortfolioDetails'
+import Notfound from './pages/Notfound'
 
 
 
@@ -41,8 +42,12 @@ const router = createBrowserRouter([
                 element: <Portfolio />
             },
             {
-                path: 'portfolio-details',
+                path: 'portfolio-details/:id',
                 element: <PortfolioDetails />
+            },
+            {
+                path: '*',
+                element: <Notfound />
             }
         ]
     }
