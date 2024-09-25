@@ -129,6 +129,7 @@ function ContactPage() {
                             dataErr && <p style={{color: 'red'}}>{dataErr}</p>
                         }
                         <input type="text" value={data.name} onChange={handleValue} name="name" placeholder="Enter your full name" />
+                        <input type="text" name="subject" defaultValue="Contact from kmsite.netlify.app" hidden />
                         <input type="email" value={data.email} onChange={handleValue} name="email" placeholder="Enter your email (required)" required />
                         <textarea placeholder="Type your message (required)" value={data.message} onChange={handleValue} name="message" required></textarea>
                         <button>Send Message</button>
