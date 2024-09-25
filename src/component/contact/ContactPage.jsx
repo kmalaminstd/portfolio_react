@@ -1,7 +1,53 @@
+
+import { useRef, useState } from "react"
 import { Link } from "react-router-dom"
+import emailjs from "@emailjs/browser"
+import { toast } from "react-toastify"
+// import { Resend } from "resend"
 
 
 function ContactPage() {
+
+    const form = useRef()
+
+    const [data, setData] = useState({
+        name: '',
+        email: '',
+        message: ''
+    })
+    const [dataErr, setDataErr] = useState('')
+
+    const handleValue = e => {
+        setData({
+            ...data,
+            [e.target.name]: e.target.value
+        })
+    }
+
+
+    const handleForm = e => {
+        e.preventDefault()
+
+        if(!data.email && !data.message){
+            setDataErr('Invalid field')
+        }else{
+            emailjs.sendForm(import.meta.env.VITE_EMAILJS_SERVICE_ID, import.meta.env.VITE_EMAILJS_TEMPLATE_ID, form.current,{
+                publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+            }).then(()=>{
+                toast.success("Email sent")
+                form.current.reset()
+                setData({
+                    name: '',
+                    email: '',
+                    message: ''
+                });
+            }).catch((err)=>{
+                console.log(err);
+                toast.error("Email send failed")
+            })
+        }
+    }
+
   return (
     <>
         <div className="contact_page">
@@ -78,10 +124,13 @@ function ContactPage() {
 
                     <h4>Contact Form</h4>
 
-                    <form action="">
-                        <input type="text" name="fullname" placeholder="Enter your full name" />
-                        <input type="email" name="email" placeholder="Enter your email (required)" required />
-                        <textarea placeholder="Type your message (required)" name="message" required></textarea>
+                    <form ref={form} onSubmit={handleForm}>
+                        {
+                            dataErr && <p style={{color: 'red'}}>{dataErr}</p>
+                        }
+                        <input type="text" value={data.name} onChange={handleValue} name="name" placeholder="Enter your full name" />
+                        <input type="email" value={data.email} onChange={handleValue} name="email" placeholder="Enter your email (required)" required />
+                        <textarea placeholder="Type your message (required)" value={data.message} onChange={handleValue} name="message" required></textarea>
                         <button>Send Message</button>
                     </form>
                 </div>

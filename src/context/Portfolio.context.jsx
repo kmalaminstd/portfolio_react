@@ -21,7 +21,7 @@ export const PortfolioProvider = ({children})=>{
         })
     },[])
 
-    console.log(items);
+    // console.log(items);
     
 
     // const portfolioItem = [

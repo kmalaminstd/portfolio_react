@@ -8,7 +8,7 @@ function Navbar() {
     const location = useLocation()
 
     
-    console.log(location.pathname.split('/')[1]);
+    // console.log(location.pathname.split('/')[1]);
     
 
     const toggleNav = ()=>{
