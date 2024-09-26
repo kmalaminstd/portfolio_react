@@ -1,13 +1,14 @@
-import {  } from 'react'
+import { lazy } from "react"
 import { createBrowserRouter, Outlet, RouterProvider, ScrollRestoration } from "react-router-dom"
-import Navbar from "./component/shared/Navbar"
-import TopSocial from "./component/shared/TopSocial"
-import Home from "./pages/Home"
-import Footer from "./component/shared/Footer"
-import Contact from "./pages/Contact"
-import Portfolio from './pages/Portfolio'
-import PortfolioDetails from './pages/PortfolioDetails'
-import Notfound from './pages/Notfound'
+
+const Navbar = lazy(()=> import('./component/shared/Navbar'))
+const TopSocial = lazy(()=> import('./component/shared/TopSocial'))
+const Home = lazy(()=> import('./pages/Home'))
+const Footer = lazy(()=> import('./component/shared/Footer'))
+const Contact = lazy(()=> import('./pages/Contact'))
+const Portfolio = lazy(()=> import('./pages/Portfolio'))
+const PortfolioDetails = lazy(()=> import('./pages/PortfolioDetails'))
+const Notfound = lazy(()=> import('./pages/Notfound'))
 import {ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
 
