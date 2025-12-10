@@ -1,4 +1,5 @@
 import { lazy } from "react"
+import Experience from "../component/home/Experience"
 // import About from "../component/home/About"
 // import Banner from "../component/home/Banner"
 // import Service from "../component/home/Service"
@@ -16,6 +17,7 @@ function Home() {
     <>
         <Banner />
         <About />
+        <Experience />
         <Service />
         <Skill />
         <Work />

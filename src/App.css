@@ -338,6 +338,102 @@ img{
     }
 }
 
+
+/* Example: src/component/home/Experience.css */
+.experience-section {
+  background: #18181b;
+  padding: 3rem 1rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.5);
+  margin-top: 2rem;
+}
+
+.experience-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #27272a;
+  padding-bottom: 0.5rem;
+}
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.experience-card {
+  background: #232326;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.4);
+  transition: box-shadow 0.2s;
+}
+
+.experience-card:hover {
+  box-shadow: 0 6px 24px rgba(0,0,0,0.7);
+}
+
+.experience-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+@media (min-width: 768px) {
+  .experience-header {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.experience-role {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #facc15;
+}
+
+.experience-company {
+  color: #a1a1aa;
+}
+
+.experience-period {
+  color: #71717a;
+  margin-top: 0.5rem;
+}
+
+.experience-tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.experience-tech {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  background: #18181b;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.5rem;
+  font-size: 0.95rem;
+  color: #d4d4d8;
+  border: 1px solid #27272a;
+}
+
+.experience-desc {
+  margin-top: 1rem;
+  color: #d4d4d8;
+  list-style: disc inside;
+  padding-left: 0.5rem;
+}
+
+.experience-desc li {
+  margin-bottom: 0.5rem;
+}
+
 /* Scroll Animation */
 .banner-content > * {
     animation: fadeInUp 1.5s ease forwards;

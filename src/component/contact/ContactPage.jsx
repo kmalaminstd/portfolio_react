@@ -64,6 +64,15 @@ function ContactPage() {
 
                         <div className="site">
                             <div className="site_image">
+                                <img src="./image/linkedin.png" alt="" />
+                            </div>
+                            <div className="site_name">
+                                <Link to="https://www.linkedin.com/in/k-m-al-amin-std/">Linkedin</Link>
+                            </div>
+                        </div>
+
+                        <div className="site">
+                            <div className="site_image">
                                 <img src="./image/facebook.png" alt="" /> 
                             </div>
                             <div className="site_name">
@@ -99,6 +108,8 @@ function ContactPage() {
                         </div>
 
                         
+
+                        
                     </div>
                 </div>
 
@@ -108,6 +119,7 @@ function ContactPage() {
                     </div>
 
                     <div className="sites">
+
                         <div className="site">
                             <div className="site_image">
                                 <img src="./image/gmail.png" alt="" />
@@ -116,6 +128,16 @@ function ContactPage() {
                                 <Link to="mailto:alaminkhanstd@gmail.com">Gmail</Link>
                             </div>
                         </div>
+
+                        <div className="site">
+                            <div className="site_image">
+                                <img src="./image/whatsapp.png" alt="" />
+                            </div>
+                            <div className="site_name">
+                                <a href="https://wa.me/01308490202">Whatsapp</a>
+                            </div>
+                        </div>
+
                     </div>
                     
                 </div>

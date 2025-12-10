@@ -4,7 +4,7 @@ function Footer() {
     <>
         <footer>
             <div className="container">
-                <p>&copy; 2024 portfolio by <a href="github.com/kmalaminstd">K.M. AL-AMIN</a></p>
+                <p>&copy; {new Date().getFullYear()} portfolio by <a href="github.com/kmalaminstd">K.M. AL-AMIN</a></p>
             </div>
         </footer>
     </>

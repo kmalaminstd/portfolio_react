@@ -29,6 +29,7 @@ function Navbar() {
                         location.pathname.split('/')[1] == '' && location.pathname.split('/')[1] !== 'portfolio-details' && (
 
                             <>
+                                <li><a href="#experience">Experience</a></li>
                                 <li><a href="#services">Services</a></li>
                                 <li><a href="#skills">Skills</a></li>
                                 <li><a href="#work">My Work</a></li>
