@@ -64,6 +64,9 @@ function Portfolio() {
                 <button data-filter=".js" onClick={() => handleFilter('.js')}>
                   JavaScript
                 </button>
+                <button data-filter=".js" onClick={() => handleFilter('.laravel')}>
+                  Laravel
+                </button>
               </div>
             </div>
 

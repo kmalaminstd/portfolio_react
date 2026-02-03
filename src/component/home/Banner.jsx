@@ -14,6 +14,9 @@ function Banner() {
             <div className="image-section">
                 <img src="./image/alamin.png" alt="K.M. AL-AMIN" />
             </div>
+
+
+
         </div>
     </header>
 
